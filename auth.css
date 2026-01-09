@@ -1,0 +1,309 @@
+:root{
+  --green:#2E7D32;
+  --green-light:#66BB6A;
+  --bg:#F9FAFB;
+  --border:#E0E0E0;
+}
+
+/* GLOBAL */
+body{
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+}
+.auth-container{
+  min-height:100vh;
+  padding:40px 0;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+}
+
+/*.auth-card{
+  width:420px;
+  background:#fff;
+  padding:32px;
+  border-radius:20px;
+  box-shadow:0 12px 30px rgba(0,0,0,.08);
+  margin:40px 0;
+}
+*/
+
+.auth-card{
+    width: 100%;
+    max-width: 520px;      /* 👈 makes it wide like your 2nd image */
+    padding: 40px 48px;    /* 👈 more space inside */
+    border-radius: 18px;
+    background: #fff;
+}
+
+/* BRAND HEADER */
+.brand-header{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  margin-bottom:24px;
+}
+
+.brand-logo{
+  width:64px;
+  height:64px;
+}
+
+.brand-text h2{
+  margin:0;
+  font-size:22px;
+  font-weight:600;
+}
+
+.brand-text p{
+  margin:0;
+  font-size:13px;
+  color:#777;
+}
+
+/* FORM */
+.input-group{margin-bottom:16px;}
+.input-group label{font-size:14px;}
+.input-group input{
+  width:100%;
+  padding:14px;
+  margin-top:6px;
+  border-radius:10px;
+  border:1px solid var(--border);
+}
+
+.forgot{
+  float:right;
+  color:var(--green-light);
+  font-size:13px;
+  cursor:pointer;
+}
+
+.btn-primary{
+  width:100%;
+  padding:14px;
+  background:var(--green);
+  color:white;
+  border:none;
+  border-radius:12px;
+  margin:12px 0;
+  cursor:pointer;
+}
+
+.divider{text-align:center;color:#999;font-size:12px;margin:16px 0;}
+
+/* SOCIAL */
+.social{
+  display:flex;
+  gap:12px;
+  margin-top:10px;
+}
+
+.social-btn{
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:12px;
+  border:1px solid #e0e0e0;
+  border-radius:12px;
+  text-decoration:none;
+  color:#000;
+  font-weight:500;
+  background:#fff;
+}
+
+.social-btn img{
+  width:18px;
+  height:18px;
+  object-fit:contain;
+}
+
+.bottom-text{text-align:center;margin-top:18px;}
+.bottom-text span{color:var(--green);}
+
+/* CHOOSE ROLE */
+.choose-card{
+  max-width:900px;
+  padding:48px;
+}
+
+.role-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:32px;
+  margin-top:32px;
+}
+
+.role-card{
+  background:#F9FAFB;
+  border:1px solid #E0E0E0;
+  border-radius:24px;
+  padding:32px 24px;
+  text-align:center;
+  text-decoration:none;
+  color:#000;
+  box-shadow:0 8px 24px rgba(0,0,0,0.06);
+  transition:.3s;
+}
+
+.role-card img{
+  width:48px;
+  margin-bottom:16px;
+}
+
+.role-card h3{
+  font-size:20px;
+  margin-bottom:8px;
+}
+
+.role-card p{
+  font-size:14px;
+  color:#757575;
+  line-height:1.5;
+}
+
+.role-card:hover,
+.role-card.active{
+  border-color:#66BB6A;
+  background:#F0FFF0;
+}
+
+/* OTP PAGE */
+.otp-title{
+  font-size:22px;
+  font-weight:600;
+  text-align:center;
+}
+
+.otp-sub{
+  text-align:center;
+  color:#777;
+  font-size:14px;
+  margin-bottom:18px;
+}
+
+.otp-boxes{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin:12px 0;
+}
+
+.otp-boxes input{
+  width:44px;
+  height:44px;
+  border:1px solid #e0e0e0;
+  border-radius:10px;
+  text-align:center;
+  font-size:18px;
+}
+
+.otp-info{
+  text-align:center;
+  font-size:13px;
+  color:#777;
+  margin-bottom:16px;
+}
+
+.otp-footer{
+  display:flex;
+  justify-content:space-between;
+  font-size:13px;
+  margin:12px 0;
+}
+
+.otp-footer span{
+  color:#66BB6A;
+  cursor:pointer;
+}
+/* KYC PAGE */
+.kyc-title{
+  font-size:22px;
+  font-weight:600;
+  text-align:center;
+}
+
+.kyc-sub{
+  text-align:center;
+  color:#777;
+  font-size:14px;
+  margin-bottom:24px;
+}
+
+.kyc-hint{
+  text-align:center;
+  font-size:13px;
+  color:#444;
+  margin-bottom:24px;
+}
+
+.kyc-box{
+  border:1px solid #E0E0E0;
+  border-radius:16px;
+  padding:20px;
+  margin-bottom:18px;
+  display:flex;
+   align-items:flex-start;
+  gap:16px;
+  background:#fff;
+}
+
+.kyc-box img{
+  width:32px;
+}
+
+.kyc-text h4{
+  margin:0;
+  font-size:16px;
+}
+
+.kyc-text p{
+  margin:4px 0 0;
+  font-size:13px;
+  color:#777;
+}
+.kyc-text{
+  flex:1;
+}
+
+.kyc-bar{
+  height:10px;
+  width:100%;
+  border-radius:10px;
+  background:#D0D0D0;
+  margin-top:12px;
+}
+
+.kyc-icon{
+  width:52px;
+  height:52px;
+  border:1.5px solid #333;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#fff;
+}
+
+.kyc-icon img{
+  width:26px;
+}
+/* PENDING PAGE */
+.pending-wrap{
+  text-align:center;
+  padding:20px 0;
+}
+
+.pending-wrap img{
+  width:160px;
+  margin-bottom:18px;
+}
+
+.pending-wrap h2{
+  font-size:20px;
+  margin-bottom:18px;
+}
